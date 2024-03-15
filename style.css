@@ -1,3 +1,4 @@
+
 :root{
     --white: rgb(255, 255, 255);
     --gray: #eceef1;
@@ -13,7 +14,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 120px;
 }
 
 .content{
@@ -26,7 +26,7 @@ box-sizing: border-box;
 
 .content-info{
     width: 600px;
-    height:470px;
+    height:370px;
 }
 
 .content-login{
@@ -115,4 +115,25 @@ font-size: 64px;
 h3{
     font-size: 26px;
     font-weight: 500;
+}
+
+@media screen and (max-width:940px) {
+    .content {
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:940px){
+    .content-info{
+        padding-top:210px;
+    }
+}
+
+@media screen and (min-width:940px){
+    .content-login{
+        margin-top: 150px;
+    }
 }
